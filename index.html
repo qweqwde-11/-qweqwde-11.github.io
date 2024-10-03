@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>测试</title>
+  <title>测试1</title>
   <style>
-    /* 整体页面背景设置阴影 */
     body {
       background-color: #f5f5f5;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -17,7 +16,6 @@
       margin: 0;
     }
 
-    /* 图片容器样式，实现自适应和居中，设置比例为 4:3 */
    .image-container {
       width: 80%;
       max-width: 600px;
@@ -28,29 +26,27 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
     }
 
-    /* 图片样式，使其填满容器 */
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
+      max-height: 100%;
       object-fit: cover;
+      margin: 0 auto; /* 确保图片水平居中 */
     }
 
-    /* 图片上方的在线客服文字样式，字体变大 */
    .image-text-top {
       font-size: 20px;
       color: #666;
       margin-top: 5px;
     }
 
-    /* 图片下方的欢迎光临文字样式 */
    .image-text-bottom {
       font-size: 24px;
       color: #333;
-      margin-bottom: -5px; /* 尝试设置一个负的外边距 */
-      display: inline-block; /* 防止外边距合并 */
+      margin-top: 10px; /* 与图片之间增加一点间距 */
+      padding-bottom: 10px; /* 确保下方有一定的空间而不会显得突兀 */
     }
   </style>
 </head>
@@ -58,7 +54,7 @@
 <body>
   <div class="image-container">
     <span class="image-text-top">在线客服</span>
-    <img src="123.png" alt="示例图片">
+    <img src="123,png" alt="示例图片">
     <span class="image-text-bottom">欢迎光临</span>
   </div>
 </body>
