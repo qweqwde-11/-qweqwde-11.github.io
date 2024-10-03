@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>自适应图片页面</title>
+  <title>测试</title>
   <style>
     /* 整体页面背景设置阴影 */
     body {
@@ -18,7 +18,7 @@
     }
 
     /* 图片容器样式，实现自适应和居中，设置比例为 4:3 */
-  .image-container {
+   .image-container {
       width: 80%;
       max-width: 600px;
       background-color: white;
@@ -39,17 +39,18 @@
     }
 
     /* 图片上方的在线客服文字样式，字体变大 */
-  .image-text-top {
+   .image-text-top {
       font-size: 20px;
       color: #666;
       margin-top: 5px;
     }
 
     /* 图片下方的欢迎光临文字样式 */
-  .image-text-bottom {
+   .image-text-bottom {
       font-size: 24px;
       color: #333;
-      margin-bottom: 0; /* 去掉欢迎光临底下的空白 */
+      margin-bottom: -5px; /* 尝试设置一个负的外边距 */
+      display: inline-block; /* 防止外边距合并 */
     }
   </style>
 </head>
