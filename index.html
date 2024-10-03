@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>自适应图片页面</title>
   <style>
     /* 整体页面背景设置阴影 */
     body {
@@ -18,7 +17,7 @@
     }
 
     /* 图片容器样式，实现自适应和居中，设置比例为 4:3 */
-  .image-container {
+   .image-container {
       width: 80%;
       max-width: 600px;
       background-color: white;
@@ -41,17 +40,17 @@
       object-fit: cover;
     }
 
-    /* 图片上的文字样式 */
-  .image-text-top {
-      font-size: 24px;
-      color: #333;
-      margin-top: 10px;
+    /* 图片上方的在线客服文字样式 */
+   .image-text-top {
+      font-size: 16px;
+      color: #666;
+      margin-top: 5px;
     }
 
-    /* 图片下的文字样式 */
-  .image-text-bottom {
-      font-size: 18px;
-      color: #666;
+    /* 图片下方的欢迎光临文字样式 */
+   .image-text-bottom {
+      font-size: 24px;
+      color: #333;
       margin-bottom: 10px;
     }
   </style>
@@ -60,8 +59,8 @@
 <body>
   <div class="image-container">
     <img src="your_image.jpg" alt="示例图片">
-    <span class="image-text-top">欢迎光临</span>
-    <span class="image-text-bottom">谢谢惠顾</span>
+    <span class="image-text-top">在线客服</span>
+    <span class="image-text-bottom">欢迎光临</span>
   </div>
 </body>
 
